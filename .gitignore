@@ -1,0 +1,4 @@
+# Ignore Eagle cruft
+*#*
+*.epf
+
