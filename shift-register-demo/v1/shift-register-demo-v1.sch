@@ -29,7 +29,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:wicker-linear
 LIBS:74xx
-LIBS:shift-register-demo-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -375,7 +374,7 @@ F 3 "" H 2775 5375 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 900  725  0    60   ~ 0
-This is only somewhat functional. See version 2 for updates.
+See version 2 for updates.
 Text Label 1300 3675 0    60   ~ 0
 DATA_IN
 Text Label 1300 3775 0    60   ~ 0
