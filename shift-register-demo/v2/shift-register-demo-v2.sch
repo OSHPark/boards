@@ -513,7 +513,7 @@ F 3 "" H 6250 5200 50  0000 C CNN
 $EndComp
 Text Notes 875  1025 0    60   ~ 0
 Input Voltage \n  7V to 21V
-Text Notes 2775 7150 0    60   ~ 0
+Text Notes 1700 6425 0    60   ~ 0
 LATCH\n-----\nPress and hold the LATCH low\nwhile using DATA and CLOCK\nto shift in the desired bits.\n\nOutputs will not be visible\nuntil LATCH is pulled high. \n\nThis debounce circuit is partly\nan experiment so v3 will have\nminimum necessary circuitry.
 $Comp
 L VCC #PWR021
@@ -556,17 +556,6 @@ Text Notes 4925 1200 0    79   ~ 16
 Shift Register Demo Board v2
 Text Label 1300 4075 0    60   ~ 0
 SERIAL_DATA_IN
-$Comp
-L SW_PUSH SW3
-U 1 1 56BA9B54
-P 3375 4875
-F 0 "SW3" H 3525 4985 50  0000 C CNN
-F 1 "LATCH" H 3375 4795 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_DIP_x1_Slide" H 3375 4875 50  0001 C CNN
-F 3 "" H 3375 4875 50  0000 C CNN
-	1    3375 4875
-	0    -1   -1   0   
-$EndComp
 $Comp
 L R R5
 U 1 1 56BB1C4A
@@ -616,12 +605,12 @@ Like the input data signal line, the output data\nwill be pulled low unless Q7S 
 $Comp
 L GND #PWR023
 U 1 1 56BA7D75
-P 3375 5875
-F 0 "#PWR023" H 3375 5625 50  0001 C CNN
-F 1 "GND" H 3375 5725 50  0000 C CNN
-F 2 "" H 3375 5875 50  0000 C CNN
-F 3 "" H 3375 5875 50  0000 C CNN
-	1    3375 5875
+P 3375 6275
+F 0 "#PWR023" H 3375 6025 50  0001 C CNN
+F 1 "GND" H 3375 6125 50  0000 C CNN
+F 2 "" H 3375 6275 50  0000 C CNN
+F 3 "" H 3375 6275 50  0000 C CNN
+	1    3375 6275
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -756,23 +745,23 @@ $EndComp
 $Comp
 L LED D3
 U 1 1 56BB2A33
-P 3375 5375
-F 0 "D3" H 3375 5475 50  0000 C CNN
-F 1 "LED" H 3375 5275 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 3375 5375 50  0001 C CNN
-F 3 "" H 3375 5375 50  0000 C CNN
-	1    3375 5375
+P 3375 5775
+F 0 "D3" H 3375 5875 50  0000 C CNN
+F 1 "LED" H 3375 5675 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 3375 5775 50  0001 C CNN
+F 3 "" H 3375 5775 50  0000 C CNN
+	1    3375 5775
 	0    -1   -1   0   
 $EndComp
 $Comp
 L R R4
 U 1 1 56BB2AEE
-P 3375 5725
-F 0 "R4" V 3455 5725 50  0000 C CNN
-F 1 "1K" V 3375 5725 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3305 5725 50  0001 C CNN
-F 3 "" H 3375 5725 50  0000 C CNN
-	1    3375 5725
+P 3375 6125
+F 0 "R4" V 3455 6125 50  0000 C CNN
+F 1 "1K" V 3375 6125 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3305 6125 50  0001 C CNN
+F 3 "" H 3375 6125 50  0000 C CNN
+	1    3375 6125
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1068,5 +1057,16 @@ F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 1375 1700 50  0001 C CNN
 F 3 "" H 1375 1700 50  0000 C CNN
 	1    1375 1700
 	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW3
+U 1 1 56BCF9A3
+P 3375 5075
+F 0 "SW3" H 3375 5175 50  0000 C CNN
+F 1 "LATCH" H 3375 4975 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_DIP_x1_Slide" H 3375 5075 50  0001 C CNN
+F 3 "" H 3375 5075 50  0000 C CNN
+	1    3375 5075
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
