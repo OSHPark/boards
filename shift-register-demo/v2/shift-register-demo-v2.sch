@@ -269,17 +269,6 @@ F 3 "" H 2800 1700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
-U 1 1 56BA5548
-P 1375 1700
-F 0 "C1" H 1385 1770 50  0000 L CNN
-F 1 "330nF" H 1385 1620 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 1375 1700 50  0001 C CNN
-F 3 "" H 1375 1700 50  0000 C CNN
-	1    1375 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR05
 U 1 1 56BA61B7
 P 2800 1800
@@ -1069,4 +1058,15 @@ Wire Wire Line
 	950  1525 1050 1525
 Wire Wire Line
 	1050 1525 1050 1550
+$Comp
+L C_Small C1
+U 1 1 56BA5548
+P 1375 1700
+F 0 "C1" H 1385 1770 50  0000 L CNN
+F 1 "330nF" H 1385 1620 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 1375 1700 50  0001 C CNN
+F 3 "" H 1375 1700 50  0000 C CNN
+	1    1375 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
