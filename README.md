@@ -21,12 +21,12 @@ Conference demo board. Gerbers and KiCad files for 2-layer shift register demo b
 
 ### RasPi MPU9150 Breakout Board
 
-Conference demo board. Gerbers and KiCad files for 2-layer breakout board for MPU9150 that fits inside a clear RasPi case. $29.50 for three.
+Conference demo board. Gerbers and KiCad files for 2-layer breakout board for MPU9150 that fits inside a clear RasPi case. $6.20 for three. 
 
 ![](raspi-mpu9150/osh-preview.png)
 
 ### Arduino Theremin
 
-Conference demo board. Gerbers and KiCad files for 2-layer Arduino Uno R3 shield. Play musical notes by placing your hand above a rangefinder; change the key by touching capacitive sense pads. $6.20 for three.
+Conference demo board. Gerbers and KiCad files for 2-layer Arduino Uno R3 shield. Play musical notes by placing your hand above a rangefinder; change the key by touching capacitive sense pads. $29.50 for three.
 
 ![](arduino-theremin/osh-preview.png)
