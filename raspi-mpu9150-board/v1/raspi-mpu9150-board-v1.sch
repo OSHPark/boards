@@ -1,0 +1,392 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wicker-linear
+LIBS:wicker-dds
+LIBS:wicker-crystal
+LIBS:rf24
+LIBS:wicker-vreg
+LIBS:wicker-transistors
+LIBS:wicker-stm32
+LIBS:wicker-opamp
+LIBS:wicker-aesthetic
+LIBS:wicker-invensense
+LIBS:raspi-mpu9150-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MPU 9150 Sensor Board for RasPi B+"
+Date "2016-02-02"
+Rev "v1.0"
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "Company: Wickerbox Electronics"
+Comment4 ""
+$EndDescr
+$Comp
+L +3.3V #PWR01
+U 1 1 56B136AB
+P 6100 3150
+F 0 "#PWR01" H 6100 3000 50  0001 C CNN
+F 1 "+3.3V" H 6100 3290 50  0000 C CNN
+F 2 "" H 6100 3150 50  0000 C CNN
+F 3 "" H 6100 3150 50  0000 C CNN
+	1    6100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 56B136CF
+P 4150 3100
+F 0 "#FLG02" H 4150 3195 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 3280 50  0000 C CNN
+F 2 "" H 4150 3100 50  0000 C CNN
+F 3 "" H 4150 3100 50  0000 C CNN
+	1    4150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 56B13757
+P 8100 3950
+F 0 "C4" H 8110 4020 50  0000 L CNN
+F 1 "2.2nF 50V" H 8110 3870 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 8100 3950 50  0001 C CNN
+F 3 "" H 8100 3950 50  0000 C CNN
+	1    8100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 56B137A1
+P 7750 3950
+F 0 "C3" H 7760 4020 50  0000 L CNN
+F 1 "100nF" H 7760 3870 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 7750 3950 50  0001 C CNN
+F 3 "" H 7750 3950 50  0000 C CNN
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 56B1384C
+P 5700 3450
+F 0 "C2" H 5710 3520 50  0000 L CNN
+F 1 "100nF" H 5710 3370 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 5700 3450 50  0001 C CNN
+F 3 "" H 5700 3450 50  0000 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 4250 0    60   ~ 0
+NC\nNC\nNC
+$Comp
+L GND #PWR03
+U 1 1 56B13BF0
+P 7750 4050
+F 0 "#PWR03" H 7750 3800 50  0001 C CNN
+F 1 "GND" H 7750 3900 50  0000 C CNN
+F 2 "" H 7750 4050 50  0000 C CNN
+F 3 "" H 7750 4050 50  0000 C CNN
+	1    7750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56B13C0C
+P 8100 4050
+F 0 "#PWR04" H 8100 3800 50  0001 C CNN
+F 1 "GND" H 8100 3900 50  0000 C CNN
+F 2 "" H 8100 4050 50  0000 C CNN
+F 3 "" H 8100 4050 50  0000 C CNN
+	1    8100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 56B13C28
+P 7500 4600
+F 0 "#PWR05" H 7500 4350 50  0001 C CNN
+F 1 "GND" H 7500 4450 50  0000 C CNN
+F 2 "" H 7500 4600 50  0000 C CNN
+F 3 "" H 7500 4600 50  0000 C CNN
+	1    7500 4600
+	1    0    0    -1  
+$EndComp
+Text Label 7550 3350 0    60   ~ 0
+IMU_CLKOUT
+$Comp
+L GND #PWR06
+U 1 1 56B13D3B
+P 5700 3550
+F 0 "#PWR06" H 5700 3300 50  0001 C CNN
+F 1 "GND" H 5700 3400 50  0000 C CNN
+F 2 "" H 5700 3550 50  0000 C CNN
+F 3 "" H 5700 3550 50  0000 C CNN
+	1    5700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 56B13D52
+P 5350 3450
+F 0 "C1" H 5360 3520 50  0000 L CNN
+F 1 "10nF" H 5360 3370 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 5350 3450 50  0001 C CNN
+F 3 "" H 5350 3450 50  0000 C CNN
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 56B13DA5
+P 5350 3550
+F 0 "#PWR07" H 5350 3300 50  0001 C CNN
+F 1 "GND" H 5350 3400 50  0000 C CNN
+F 2 "" H 5350 3550 50  0000 C CNN
+F 3 "" H 5350 3550 50  0000 C CNN
+	1    5350 3550
+	1    0    0    -1  
+$EndComp
+Text Label 7550 3450 0    60   ~ 0
+IMU_INT
+Text Label 5700 4450 0    60   ~ 0
+IMU_AD0
+Text Label 5700 4550 0    60   ~ 0
+IMU_FSYNC
+$Comp
+L R_Small R2
+U 1 1 56B14518
+P 5000 3700
+F 0 "R2" H 5030 3720 50  0000 L CNN
+F 1 "10K" H 5030 3660 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" H 5000 3700 50  0001 C CNN
+F 3 "" H 5000 3700 50  0000 C CNN
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 56B1456B
+P 4750 3700
+F 0 "R1" H 4780 3720 50  0000 L CNN
+F 1 "10K" H 4780 3660 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" H 4750 3700 50  0001 C CNN
+F 3 "" H 4750 3700 50  0000 C CNN
+	1    4750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X12 P1
+U 1 1 56B153E9
+P 2900 3800
+F 0 "P1" H 2900 4450 50  0000 C CNN
+F 1 "CONN_01X12" V 3000 3800 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x06" H 2900 3800 50  0001 C CNN
+F 3 "" H 2900 3800 50  0000 C CNN
+	1    2900 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 56B155E7
+P 3200 4850
+F 0 "#PWR08" H 3200 4600 50  0001 C CNN
+F 1 "GND" H 3200 4700 50  0000 C CNN
+F 2 "" H 3200 4850 50  0000 C CNN
+F 3 "" H 3200 4850 50  0000 C CNN
+	1    3200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3350 6350 3350
+Wire Wire Line
+	6100 3450 6350 3450
+Connection ~ 6100 3350
+Wire Wire Line
+	6100 3550 6350 3550
+Wire Wire Line
+	4100 4450 6350 4450
+Wire Wire Line
+	4000 4550 6350 4550
+Wire Wire Line
+	3100 3250 6100 3250
+Connection ~ 6100 3250
+Wire Wire Line
+	5700 3350 5700 3250
+Connection ~ 5700 3250
+Wire Wire Line
+	7350 4350 7500 4350
+Wire Wire Line
+	7500 4350 7500 4600
+Wire Wire Line
+	7350 4450 7500 4450
+Connection ~ 7500 4450
+Wire Wire Line
+	7350 4550 7500 4550
+Connection ~ 7500 4550
+Wire Wire Line
+	7350 3350 8700 3350
+Connection ~ 6100 3450
+Wire Wire Line
+	7350 3450 8600 3450
+Wire Wire Line
+	6100 3150 6100 3550
+Wire Wire Line
+	5350 3250 5350 3350
+Connection ~ 5350 3250
+Wire Wire Line
+	4750 3800 4750 4150
+Connection ~ 4750 4150
+Wire Wire Line
+	5000 3800 5000 4250
+Connection ~ 5000 4250
+Wire Wire Line
+	5000 3600 5000 3250
+Wire Wire Line
+	4750 3600 4750 3250
+Connection ~ 5000 3250
+Connection ~ 4750 3250
+Wire Wire Line
+	7350 3800 7750 3800
+Wire Wire Line
+	7750 3800 7750 3850
+Wire Wire Line
+	7350 3600 8100 3600
+Wire Wire Line
+	8100 3600 8100 3850
+Wire Wire Line
+	4300 3350 4300 4150
+Wire Wire Line
+	4200 3550 4200 4250
+Wire Wire Line
+	3100 3750 3200 3750
+Wire Wire Line
+	3200 3750 3200 4850
+Wire Wire Line
+	3100 4250 3800 4250
+$Comp
+L +3.3V #PWR09
+U 1 1 56B158BB
+P 3400 3150
+F 0 "#PWR09" H 3400 3000 50  0001 C CNN
+F 1 "+3.3V" H 3400 3290 50  0000 C CNN
+F 2 "" H 3400 3150 50  0000 C CNN
+F 3 "" H 3400 3150 50  0000 C CNN
+	1    3400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3250 3400 3150
+Connection ~ 3400 3250
+Wire Wire Line
+	4150 3250 4150 3100
+Connection ~ 4150 3250
+Text Label 3300 3350 0    60   ~ 0
+SDA
+Text Label 3300 3550 0    60   ~ 0
+SCL
+Text Label 3300 4350 0    60   ~ 0
+IMU_AD0
+Text Label 3300 4250 0    60   ~ 0
+IMU_CLKOUT
+Text Notes 2750 2900 0    60   ~ 0
+RasPi B+ GPIO\nBreakout
+Text Notes 6600 2950 0    60   ~ 0
+Invensense\nMPU 9150\n9DOF IMU
+Wire Wire Line
+	3200 4700 3450 4700
+Connection ~ 3200 4700
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 56B15B34
+P 3450 4650
+F 0 "#FLG010" H 3450 4745 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 4830 50  0000 C CNN
+F 2 "" H 3450 4650 50  0000 C CNN
+F 3 "" H 3450 4650 50  0000 C CNN
+	1    3450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4700 3450 4650
+Wire Wire Line
+	3900 3950 3900 4900
+Wire Wire Line
+	3900 4900 8600 4900
+Wire Wire Line
+	8600 4900 8600 3450
+Wire Wire Line
+	3800 4250 3800 5000
+Wire Wire Line
+	3800 5000 8700 5000
+Wire Wire Line
+	8700 5000 8700 3350
+Wire Wire Line
+	4200 4250 6350 4250
+Wire Wire Line
+	4300 4150 6350 4150
+Text Label 5700 4150 0    60   ~ 0
+SDA
+Text Label 5700 4250 0    60   ~ 0
+SCL
+$Comp
+L MPU9150 U1
+U 1 1 56B16EB0
+P 6850 3950
+F 0 "U1" H 6500 4700 50  0000 L CNN
+F 1 "MPU9150" H 6900 4700 50  0000 L CNN
+F 2 "mpu9150:QFN-24-1EP_4x4mm_Pitch0.5mm" H 6850 3950 50  0001 C CNN
+F 3 "" H 6850 3950 50  0000 C CNN
+	1    6850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4350 4100 4350
+Wire Wire Line
+	4100 4350 4100 4450
+Wire Wire Line
+	3100 3350 4300 3350
+Wire Wire Line
+	3100 3550 4200 3550
+Wire Wire Line
+	3100 3950 3900 3950
+Wire Wire Line
+	3100 4150 4000 4150
+Wire Wire Line
+	4000 4150 4000 4550
+Text Label 3300 3950 0    60   ~ 0
+IMU_INT
+Text Label 3300 4150 0    60   ~ 0
+IMU_FSYNC
+$EndSCHEMATC
