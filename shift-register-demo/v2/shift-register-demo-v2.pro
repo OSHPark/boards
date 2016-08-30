@@ -1,4 +1,4 @@
-update=Fri 19 Feb 2016 12:04:50 PM PST
+update=Mon 29 Aug 2016 05:20:03 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=/home/wicker/proj/kicad/
@@ -70,3 +60,14 @@ LibName28=library-repos/symbols/valves
 LibName29=wickerlib-kicad/symbols/wicker-linear
 LibName30=library-repos/symbols/74xx
 LibName31=wickerlib-kicad/symbols/wicker-switch
+LibName32=/home/wicker/proj/wickerlib/libraries/wickerlib
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
